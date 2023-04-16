@@ -98,6 +98,11 @@ button {
     color: #fff;
 }
 
+.ps {
+    color: #fff;
+    margin-top: 30px;
+}
+
 .credits a {
     color: #7F45E2;
     text-decoration: none;
