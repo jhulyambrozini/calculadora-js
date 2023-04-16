@@ -90,3 +90,15 @@ button {
 .color-three {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
 }
+
+.credits {
+    position: absolute;
+    top: 530px;
+    left: 100px;
+    color: #fff;
+}
+
+.credits a {
+    color: #7F45E2;
+    text-decoration: none;
+}
