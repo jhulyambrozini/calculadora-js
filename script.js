@@ -16,7 +16,6 @@ const calculation = () => {
     try {
         if (result) {
             calc = eval(operation.innerText)
-            console.log(isNaN(calc), result)
             if(isNaN(calc) || calc == undefined) {
                 return result.innerText = "Sintaxe error"
              } else {
@@ -29,6 +28,13 @@ const calculation = () => {
 }
 
 const insert = (elem) => {
+    if (
+      (elem === "." && operation.includes(".")) ||
+      (["+", "-", "*", "/"].includes(elem) &&
+        ["+", "-", "*", "/"].includes(operation.slice(-1)))
+    ) {
+      return;
+    }
     operation.innerText += elem
     return operation
 }
