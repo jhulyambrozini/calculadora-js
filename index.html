@@ -16,11 +16,11 @@
 
     <div class="calculator">
         <div class="display">
-            <div class="operation">
-            </div>
-            <div class="result">
+            <span class="operation">
+            </span>
+            <span class="result">
                 0
-            </div>
+            </span>
             
         </div>
         <div class="buttons">
@@ -31,57 +31,57 @@
                 <button class="clean">C</button>
             </div>
             <div class="button">
-                <button class="operator" onclick="insert('**')">^</button>
+                <button class="operator" onclick="insertDigit('^')">^</button>
             </div>
             <div class="button">
-                <button class="operator color-operation" onclick="insert('/')">÷</button>
+                <button class="operator color-operation" onclick="insertDigit('÷')">÷</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('7')">7</button>
+                <button class="number" onclick="insertDigit('7')">7</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('8')">8</button>
+                <button class="number" onclick="insertDigit('8')">8</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('9')">9</button>
+                <button class="number" onclick="insertDigit('9')">9</button>
             </div>
             <div class="button">
-                <button class="operator color-operation" onclick="insert('*')">x</button>
+                <button class="operator color-operation" onclick="insertDigit('x')">x</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('4')">4</button>
+                <button class="number" onclick="insertDigit('4')">4</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('5')">5</button>
+                <button class="number" onclick="insertDigit('5')">5</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('6')">6</button>
+                <button class="number" onclick="insertDigit('6')">6</button>
             </div>
             <div class="button">
-                <button class="operator color-operation" onclick="insert('-')">-</button>
+                <button class="operator color-operation" onclick="insertDigit('-')">-</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('1')">1</button>
+                <button class="number" onclick="insertDigit('1')">1</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('2')">2</button>
+                <button class="number" onclick="insertDigit('2')">2</button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('3')">3</button>
+                <button class="number" onclick="insertDigit('3')">3</button>
             </div>
             <div class="button">
-                <button class="operator color-operation" onclick="insert('+')">+</button>
+                <button class="operator color-operation" onclick="insertDigit('+')">+</button>
             </div>
             <div class="button">
-                <button class="operator " onclick="insert('**0.5')">
+                <button class="operator " onclick="insertDigit('√')">
                     √
                 </button>
             </div>
             <div class="button">
-                <button class="number" onclick="insert('0')">0</button>
+                <button class="number" onclick="insertDigit('0')">0</button>
             </div>
             <div class="button">
-                <button class="float" onclick="insert('.')">.</button>
+                <button class="float" onclick="insertDigit('.')">.</button>
             </div>
             <div class="button">
                 <button class="color-three" onclick="calculation()">=</button>

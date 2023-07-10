@@ -13,28 +13,29 @@ clean.addEventListener('click', () => {
 })
 
 const calculation = () => {
+
+    let operationResult = operation.innerText
+    operationResult = operationResult.replace('x', '*')
+    operationResult = operationResult.replace('÷', '/')
+    operationResult = operationResult.replace('^', '**')
+    operationResult = operationResult.replace('√', '**0.5')
+
     try {
-        if (result) {
-            calc = eval(operation.innerText)
-            if(isNaN(calc) || calc == undefined) {
-                return result.innerText = "Sintaxe error"
-             } else {
-                result.innerText = calc
-             }
-        }
+         result.innerText = eval(operationResult)
     } catch {
         result.innerText = 'Sintaxe error'
     }    
 }
 
-const insert = (elem) => {
+const insertDigit = (digit) => {
     if (
-      (elem === "." && operation.includes(".")) ||
-      (["+", "-", "*", "/"].includes(elem) &&
-        ["+", "-", "*", "/"].includes(operation.slice(-1)))
-    ) {
-      return;
-    }
-    operation.innerText += elem
+        (digit === "." && operation.innerText.includes(".")) ||
+        (["+", "-", "x", "√","÷"].includes(digit) &&
+          ["+", "-", "x", "√","÷"].includes(operation.innerText.slice(-1)))
+      ) {
+        return;
+      }
+
+    operation.innerText += digit
     return operation
 }
