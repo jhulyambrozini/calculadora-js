@@ -30,8 +30,8 @@ const calculation = () => {
 const insertDigit = (digit) => {
     if (
         (digit === "." && operation.innerText.includes(".")) ||
-        (["+", "-", "x", "√","÷"].includes(digit) &&
-          ["+", "-", "x", "√","÷"].includes(operation.innerText.slice(-1)))
+        (["+", "-", "x", "√","÷","^"].includes(digit) &&
+          ["+", "-", "x", "√","÷","^"].includes(operation.innerText.slice(-1)))
       ) {
         return;
       }
